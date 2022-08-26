@@ -31,31 +31,13 @@ class Pulsador {
     }
 };
 
-#define PIN_PULSADOR_1 3
-#define PIN_PULSADOR_2 6
-#define PIN_LED 13
-
 Pulsador *p1 = new Pulsador(PIN_PULSADOR_1);
-Pulsador *p2 = new Pulsador(PIN_PULSADOR_2);
 
 int contador = 0;
 void setup() {
-  Serial.begin(9600);
-  p1->setFlanco(LOW);
-  p2->setFlanco(HIGH);
+
 }
 
 void loop() {
-
-  if (p1->getIsPress()) {
-    Serial.println("p1 is press");
-    
-  }
-
-  if (p2->getIsPress()) {
-    Serial.println("p2 is press");
-    
-  }
-
 
 }
