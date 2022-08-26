@@ -134,25 +134,10 @@ void stopMotor() //freno
 
 void setup()
 {
-    //como uno de los motores va en sentido contrario por que esta invertido fisicamente, invierto su sentido por software.
-    m1.invertDirection();
+    
 }
 
 void loop()
 {
-    //voy hacia adelante
-    forward();
-    delay(1000);
-    //voy hacia atras
-    backward();
-    delay(1000);
-    //giro a la izquierda
-    left();
-    delay(1000);
-    //giro a la derecha
-    right();
-    delay(1000);
-    //freno
-    stopMotor();
-    delay(1000);
+  
 }
