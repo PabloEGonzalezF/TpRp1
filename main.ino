@@ -100,37 +100,6 @@ public:
 Motor m1 = Motor(PIN_MOTOR_DERECHO_DIR, PIN_MOTOR_DERECHO_PWM);
 Motor m2 = Motor(PIN_MOTOR_IZQUIERDO_DIR, PIN_MOTOR_IZQUIERDO_PWM);
 
-//defino la direcciones del robot
-void forward() //voy hacia adelante
-{
-    m1.forward();
-    m2.forward();
-}
-
-void backward() //voy hacia atras
-{
-    m1.backward();
-    m2.backward();
-}
-
-void left() //giro a la izquierda
-{
-    m1.forward();
-    m2.backward();
-}
-
-
-void right() //giro a la derecha
-{
-    m1.backward();
-    m2.forward();
-}
-
-void stopMotor() //freno
-{
-  m1.stop();
-  m2.stop();
-}
 
 void setup()
 {
